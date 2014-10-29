@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/mainrs">
+        <file>gongNeng.png</file>
+        <file>jiaSu.png</file>
+        <file>louDong.png</file>
+        <file>muMa.png</file>
+        <file>qingLi.png</file>
+        <file>ruanJian.png</file>
+        <file>xiTong.png</file>
+        <file>icon_wen.png</file>
+        <file>icon_f1.png</file>
+        <file>icon_f2.png</file>
+        <file>main_back.png</file>
+        <file>console.png</file>
+    </qresource>
+</RCC>

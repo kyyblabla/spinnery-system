@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> QMainWindow#MainWindow{
+ 
+}
+
+
+QPushButton{
+	padding:6px 10px 6px 10px;
+	border-radius:4px;
+	
+	background-color: rgba(255, 255, 255, 180);
+}
+
+QPushButton:hover{
+	background-color: rgba(255, 255, 255, 230);
+}
+
+
+QWidget#widget_main_menu QPushButton{
+	padding:6px 10px 6px 10px;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius:3px;
+}
+
+QWidget#widget_main_menu QPushButton:hover{
+	 
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 85, 0,200);
+}
+
+
+
+QLabel{
+	color:#FFF;
+}
+
+QWidget#widget_main_menu,QStackedWidget#stackedWidget{
+background-color: rgba(255, 255, 255, 80);
+border-radius:3px;
+}
+
+ /*设置滚动条样式*/
+QScrollBar:vertical
+{
+    width:10px;
+    background:rgba(0,0,0,0%);
+    margin:0px,0px,0px,0px;
+    padding-top:9px;   
+    padding-bottom:9px;
+}
+
+QScrollBar:horizontal
+{
+    height:10px;
+    background:rgba(0,0,0,0%);
+    margin:0px,0px,0px,0px;
+    padding-left:9px;   
+    padding-right:9px;
+}
+
+
+
+QScrollBar::handle:vertical
+{
+    width:10px;
+    background:rgba(0,0,0,25%);
+    border-radius:4px;    
+    min-height:20;
+}
+
+QScrollBar::handle:horizontal
+{
+    height:10px;
+    background:rgba(0,0,0,25%);
+    border-radius:4px;    
+    min-width:20;
+}
+
+
+QScrollBar::handle:vertical:hover,QScrollBar::handle:horizontal:hover
+{
+    width:10px;
+    background:rgba(0,0,0,50%);    
+    border-radius:4px;
+    min-height:20;
+}
+
+/*
+QScrollBar::add-line:vertical,QScrollBar::add-line:horizontal   
+{
+    height:9px;
+	width:8px;
+    subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical,QScrollBar::sub-line:horizontal    
+{
+    height:9px;width:8px;
+    subcontrol-position:top;
+}
+
+QScrollBar::add-line:vertical:hover,QScrollBar::add-line:horizontal:hover     
+{
+    height:9px;width:8px;
+    subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:horizontal:hover  
+{
+    height:9px;width:8px;
+    subcontrol-position:top;
+}
+*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical,QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal   
+{
+    background:rgba(0,0,0,10%);
+    border-radius:4px;
+}
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <property name="leftMargin">
+     <number>9</number>
+    </property>
+    <property name="topMargin">
+     <number>9</number>
+    </property>
+    <property name="rightMargin">
+     <number>9</number>
+    </property>
+    <property name="bottomMargin">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_main_menu" native="true">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_main">
+            <property name="font">
+             <font>
+              <stylestrategy>PreferAntialias</stylestrategy>
+             </font>
+            </property>
+            <property name="text">
+             <string>Home</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../rs/main_rs.qrc">
+              <normaloff>:/mainrs/xiTong.png</normaloff>:/mainrs/xiTong.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_log">
+            <property name="text">
+             <string>Log</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../rs/main_rs.qrc">
+              <normaloff>:/mainrs/ruanJian.png</normaloff>:/mainrs/ruanJian.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_topview">
+            <property name="text">
+             <string>TopeView</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../rs/main_rs.qrc">
+              <normaloff>:/mainrs/gongNeng.png</normaloff>:/mainrs/gongNeng.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_setting">
+            <property name="text">
+             <string>Setting</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../rs/main_rs.qrc">
+              <normaloff>:/mainrs/louDong.png</normaloff>:/mainrs/louDong.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Console</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../rs/main_rs.qrc">
+              <normaloff>:/mainrs/console.png</normaloff>:/mainrs/console.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_exit">
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Exit</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../rs/main_rs.qrc">
+              <normaloff>:/mainrs/jiaSu.png</normaloff>:/mainrs/jiaSu.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <widget class="QWidget" name="page_main">
+          <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+         </widget>
+         <widget class="QWidget" name="page_log">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>System Log</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_topeview">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QWidget" name="widget_4" native="true">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Tope View</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_system_setting">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QWidget" name="widget_5" native="true">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>System Setting</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_console">
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Console</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>15</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">ss</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../rs/main_rs.qrc"/>
+ </resources>
+ <connections/>
+</ui>
